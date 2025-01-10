@@ -1,21 +1,21 @@
 version: "3.9"
 
 services:
-  farmagil:
+  flamagil:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: farmagil
+    container_name: flamagil
     networks:
       - traefik
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.static-server.entrypoints=websecure"
-      - "traefik.http.routers.static-server.rule=Host(`farmagil.darklyn.org`)"
+      - "traefik.http.routers.static-server.rule=Host(`flamagil.darklyn.org`)"
       - "traefik.http.routers.static-server.tls=true"
       - "traefik.http.routers.static-server.tls.certresolver=letsencrypt"
       - "traefik.http.services.static-server.loadbalancer.server.port=80"
-      - "traefik.http.middlewares.static-server-auth.basicauth.users=farmagil:$$apr1$$nvcgUpjj$$3eXE/VvTqWRpRJluLpOxj1"
+      - "traefik.http.middlewares.static-server-auth.basicauth.users=flamagil:$$apr1$$60fu5eic$$bz1J.GSe2ih1lrw3MNAbG/"
       - "traefik.http.routers.static-server.middlewares=static-server-auth"
 
 networks:

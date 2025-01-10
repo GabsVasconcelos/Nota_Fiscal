@@ -8,7 +8,7 @@ COPY style.css /usr/share/nginx/html/style.css
 
 # Create .htpasswd for basic auth
 RUN apk add --no-cache apache2-utils && \
-    htpasswd -cb /etc/nginx/.htpasswd farmagil farmagil
+    htpasswd -cb /etc/nginx/.htpasswd flamagil flamagil
 
 # Copy custom Nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
