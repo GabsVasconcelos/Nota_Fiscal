@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flamagil Bureal Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo-container">
+        <img src="https://flamagilbrindes.com/wp-content/uploads/2022/03/cropped-cropped-FLAMAGIL-LOGO-02-02.png" alt="Logomarca">
+    </div>
+
+    <div class="form-container">
+        <h1>Orçamento</h1>
+        <hr>
+        <h4>Dados do cliente</h4>
+        <form id="orcamento-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="cliente">Cliente:</label>
+                <input type="text" id="cliente" name="cliente" placeholder="Nome Completo ou Razão Social" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cpf">CPF ou CNPJ:</label>
+                <input type="text" id="cpf" name="cpf" placeholder="CPF ou CNPJ" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Telefone">Telefone:</label>
+                <input type="text" id="Telefone" name="Telefone" placeholder="(xx) xxxxx-xxxx" required>
+            </div>
+            <hr>
+
+            <div id="produtos-container">
+                <h4>Discriminação de Serviços</h4>
+            </div>
+            <button type="button" id="adicionar-produto">Adicionar Produto</button>
+            <hr>
+
+            <div class="form-group">
+                <label for="TotalFinal">Total Final (R$):</label>
+                <input type="text" id="TotalFinal" name="TotalFinal" placeholder="R$ 0,00" readonly>
+            </div>
+
+            <button type="button" id="imprimir">Gerar PDF</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
