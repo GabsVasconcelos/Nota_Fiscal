@@ -183,9 +183,7 @@ document.getElementById("imprimir").addEventListener("click", () => {
    
 <div style="margin-top: 40px;">
     <div style="text-align: right;">
-        <img src="images/assinatura.png" 
-            alt="Imagem do Rodapé" 
-            style="height: 110px; margin-bottom: 10px;">
+        
         <p style="margin: 0; font-size: 14px; font-weight: bold;">Campina Grande, ${dataAtual}</p>
     </div>
     
