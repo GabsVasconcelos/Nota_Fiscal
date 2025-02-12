@@ -189,6 +189,7 @@ document.getElementById("imprimir").addEventListener("click", () => {
     
     <hr style="border: 1px solid #000;">
 
+
     <div style="text-align: center; margin-top: 10px;">
         <p style="font-size: 12px; margin: 5px 0;">
             <strong>Av. Ministro José Américo de Almeida, 147 - Santo Antônio - CEP 58406-040</strong>
